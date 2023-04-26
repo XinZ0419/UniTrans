@@ -10,7 +10,7 @@ import math
 class UniTrans(nn.Module):
 
     def __init__(self, max_time, in_channel, out_dim, layer, N, d_model, dropout, num_features):
-        super(ConvTrans, self).__init__()
+        super(UniTrans, self).__init__()
         self.max_time = max_time
         self.mini_cnn = MinimalistCNN(in_channel, out_dim)
         self.pre_cnn = pretrainedCNN()
